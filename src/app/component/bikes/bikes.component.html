@@ -1,0 +1,77 @@
+
+<br><br>
+<diV class="container my-3 p-3">
+
+
+    <div class="card-header  bg-warning text-dark"> 
+    <i> List of Bikes</i>
+    </div>  
+    
+       <input type="text" class=" form-control" name="title"  readonly> 
+       <br>
+       <h4> </h4>
+       <select (change)="handleFilter($event)" class="form-control">
+         <option value="  disabled selected">Odd Or Even </option>
+         <option value="odd">Odd</option>
+         <option value="even">Even</option>
+        </select>
+       <br><br><br>
+
+       <br>
+       <div class="card">
+        <table class="table table table-striped table-responsive">
+          <thead>
+            <th>Bike ID</th>
+            <th>Bike Name</th>
+            <th>Customer Name</th>
+            <th>City Name</th>
+          </thead>
+       
+          <div *ngIf="len==1">
+          <tr class="table-warning"  *ngFor="let city of evenride;">
+            <td>{{city.BikeID}}</td>
+            <td>{{city.BikeName}}</td>
+            <td>{{city.CustomerName}}</td>
+            <td>{{city.CityName}}</td>
+            
+          </tr>
+         </div>
+         <div *ngIf="len==2">
+          <tr class="table-info"  *ngFor="let city of oddride;">
+            <td>{{city.BikeID}}</td>
+            <td>{{city.BikeName}}</td>
+            <td>{{city.CustomerName}}</td>
+            <td>{{city.CityName}}</td>
+          </tr>
+         
+        </div>
+       
+        </table>
+ 
+       </div>
+          </diV>
+<!--
+          <div class="card p-3 my-3">
+            <div class="card bg-dark text-white">
+              <div class="card-header">
+                <h2><i>List Of Bikes</i></h2>
+              </div>
+            </div>
+            <hr class="solid">
+            <div class="card p-3 my-3 ">
+              <div class="card-body">
+                <ul style="list-style-type:square">
+    
+                  <li *ngFor=" let Bikes of mybike" [class.selected]="Bikes==selectedbike" (click)="handlebikelist(Bikes)">
+                    {{Bikes.BikeID}} - {{Bikes.BikeName}} </li>
+    
+                </ul>
+              </div>
+            </div>
+            <div class="card bg-warning text-dark">
+              <div class="card-footer">
+                <h2><i *ngIf="selectedbike"> Your Choice: {{ selectedbike.BikeID}} - {{selectedbike.BikeName}} </i></h2>
+              </div>
+            </div>
+            <hr class="solid">
+          </div>-->

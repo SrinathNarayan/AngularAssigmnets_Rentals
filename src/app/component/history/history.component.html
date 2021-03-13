@@ -1,0 +1,11 @@
+<div class="container p-3 my-3">  
+    <div class="card bg-warning text-dark">
+        <div class="card-body">BooKing History</div>
+      </div>
+<br>
+      <div class="card">
+        <div class="card-body"><app-grid [bikes]="mybikes" (eAddride)="handleAddride($event)"(eRemoveride)="handleremoveride($event)"> </app-grid></div>
+      </div>   
+
+
+</div>

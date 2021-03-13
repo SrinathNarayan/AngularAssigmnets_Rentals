@@ -1,0 +1,189 @@
+<div>
+    <!--Opening Image-->
+    <div class="container p-3 my-3">
+        <img class="d-block w-100" [src]="bullet4url">
+    </div>
+
+
+    <!--One Way data Binding-->
+    <div class="container p-3 my-3">
+
+        <div class="card bg-warning text-dark">
+            <div class="card-header"><b>Book A Ride </b></div>
+        </div>
+
+        <!--
+        <br>
+        <div class="card bg-light text-dark">
+            <div class="row">
+                <div class="card-body p-3">
+                    <div class="col-lg-4">
+                        <i> Full Name </i>
+                        <input type="text" class="form-control" placeholder="Full Name" [value]=" myname"
+                            (input)="handlename($event)">
+                        <br> <i> {{(this.myname)}}</i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i> Mobile Number </i>
+                        <input type="number" class="form-control" placeholder="Phone Number" [value]=" myno"
+                            (keyup.enter)="handleno($event)" />
+                            <br>
+                            <i> Press Enter to Save </i>
+                    </div>
+                    <div class="col-lg-4">
+                    <i> Pin Code </i>
+                    <input type="number" class="form-control" placeholder=" Pin Code" [value]=" pin"
+                    (keyup.enter)="handlepin($event)" />
+                    <br>
+                    <i> Press Enter to Save </i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i> City </i>
+                        <input type="text" class="form-control" placeholder= "City" [value]="mycity"
+                        (keyup.Alt.a)="handlecity($event)" />
+                        <br>
+                        <i> Press Alt+A to Save </i>   
+                    </div>
+
+<br>
+
+<div class="col-lg-4">
+        <i>Select A Ride </i>
+        <select (change)="selectChangeHandler($event)" class="form-control">
+          <option value="KTM">KTM</option>
+          <option value="Bullet">Bullet</option>
+          <option value="BMW">BMW</option>
+          <option value="YAHAMA">YAHAMA</option>
+          <option value="Ducati">Ducati</option>
+          <option value="Kawasaki">Kawasaki</option>
+        </select>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card bg-light text-dark">
+
+
+        </div>
+    </div>
+-->
+<!--Event Binding-->
+        <div class="card  bg-light text-dark p-3 my-3">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <i> Full Name </i>
+                        <input type="text" class="form-control" placeholder="Full Name" [value]=" myname"
+                            (input)="handlename($event)">
+                        <br>
+                        <i>jJst Type..</i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i> Mobile Number </i>
+                        <input type="number" class="form-control" placeholder="Phone Number" [value]=" myno"
+                            (keyup.enter)="handleno($event)" />
+                        <br>
+                        <i> Press Enter to Save.. </i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i> Pin Code </i>
+                        <input type="number" class="form-control" placeholder=" Pin Code" [value]=" pin"
+                            (keyup.enter)="handlepin($event)" />
+                        <br>
+                        <i> Press Enter to Save.. </i>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <i> City </i>
+                        <input type="text" class="form-control" placeholder="City" [value]="mycity"
+                            (keyup.Alt.a)="handlecity($event)" />
+                        <br>
+                        <i> Press Alt+A to Save.. </i>
+                        <br>
+                    </div>
+                    <div class="col-lg-4">
+                        <i> Country </i>
+                        <input type="text" class="form-control" placeholder="Country" [value]="mycountry"
+                            (keyup.Alt.a)="handlecountry($event)" />
+                        <br>
+                        <i> Press Alt+A to Save.. </i>
+                    </div>
+                    <br>
+                    <div class="col-lg-4">
+                        <i>Select A Ride </i>
+                        <select (change)="selectChangeHandler($event)" class="form-control">
+                            <option value="KTM">KTM</option>
+                            <option value="Bullet">Bullet</option>
+                            <option value="BMW">BMW</option>
+                            <option value="YAHAMA">YAHAMA</option>
+                            <option value="Ducati">Ducati</option>
+                            <option value="Kawasaki">Kawasaki</option>
+                        </select>
+                        <br>
+                        <i> .... </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-info text-dark">
+            <div class="card-header"> <b>Details Confomation </b></div>
+        </div>
+
+        <div class="card  bg-light text-dark p-3 my-3">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                    <b>Name</b>
+                        <br>
+                      <b> <i>{{(this.myname)}}</i></b>  
+                    </div>
+                    <div class="col-lg-4">
+                        <b>Phone Number</b>
+                        <br>
+                        <b> <i>{{(this.myno)}}</i></b>  
+                    </div>
+                    <div class="col-lg-4">
+                        <b>PinCode</b>
+                        <br>
+                        <b> <i>{{(this.pin)}}</i></b>  
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <b>City</b>
+                        <br>
+                        <b> <i>{{(this.mycity)}}</i></b>  
+                    </div>
+                    <div class="col-lg-4">
+                        <b>Country</b>
+                        <br>
+                        <b> <i>{{(this.mycountry)}}</i></b>  
+  
+                    </div>
+                    <br>
+                    <div class="col-lg-4">
+                        <b>Your Ride.</b>
+                        <br>
+                        <b><i>{{(selectedride)}}</i></b>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+      
+          <!--Button-->
+        <div>
+            <button type="button"  (click) ="opensweet()"class="btn btn-outline-warning btn-lg btn-block">Submit</button>
+        </div>
+

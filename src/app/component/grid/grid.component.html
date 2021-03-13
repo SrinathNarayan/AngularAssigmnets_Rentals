@@ -1,0 +1,91 @@
+<div lass="container p-3 my-3">
+
+  <table class="table table-light table-hover">
+    <thead>
+      <tr>
+        <th>Bike Id</th>
+        <th>Bike Name</th>
+        <th>Customer Name</th>
+        <th>City Name</th>
+       <th> <span class="badge badge-danger">   X   </span></th>
+      </tr>
+    </thead>
+    <tbody>
+        
+      <tr *ngFor="let R of bikes">
+        <td>{{R.BikeID}}</td>
+        <td>{{R.BikeName}}</td>
+        <td>{{R.CustomerName}}</td>
+        <td>{{R.CityName}}</td>
+        <td><button type="button" (click)="handleremoveride(R.BikeID)" class="btn btn-outline-danger">Remove</button></td>
+       
+      </tr>
+    </tbody>
+  </table>
+  <!--
+  <div class="card bg-light text-dark p-3 my-3">
+    <div>
+      <div>Ride Id</div>
+      <div>
+        <input type="number" [value]="ride.BikeID" #ids/>
+      </div>
+      <hr class="solid">
+
+      <div>Bike Name</div>
+      <div>
+        <input type="text" [value]="ride.BikeName" #Bname/>
+      </div>
+
+      <div>Customer Name</div>
+      <div>
+        <input type="text" [value]="ride.CustomerName"#cname />
+      </div>
+      <hr class="solid">
+
+      <div>City Name</div>
+      <div>
+        <input type="text" [value]="ride.CityName " #Ccname/>
+      </div>
+      <hr class="solid">
+     
+      
+    </div>
+  
+  </div>
+  -->
+  <div class="card  bg-light text-dark p-3 my-3">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>Ride Id</div>
+        <div>
+          <input type="number" [value]="ride.BikeID" #ids/>
+        </div>
+        <hr class="solid">
+      </div>
+      <div class="col-lg-6">
+        <div>Bike Name</div>
+        <div>
+          <input type="text" [value]="ride.BikeName" #Bname/>
+        </div>
+  
+      </div>
+      <div class="w-100"></div>
+      <div class="col-lg-6"> <div>Customer Name</div>
+      <div>
+        <input type="text" [value]="ride.CustomerName"#cname />
+      </div></div>
+      <div class="col-lg-6"> <div>City Name</div>
+      <div>
+        <input type="text" [value]="ride.CityName " #Ccname/>
+      </div></div>
+
+    </div>
+  </div>
+  
+</div>
+<div class="container  bg-light text-dark p-3 my-3">
+
+<button type="button" (click)="handleAddride(ids.value,Bname.value,cname.value,Ccname.value)"class= "btn-outline-warning btn-lg btn-block">Add</button>
+</div>
+</div>

@@ -1,0 +1,75 @@
+<div class ="container p-3 my-3">
+    <img [src]="bullet5url" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+  <div>
+    <div class="container-fluid p-3 my-3 ">
+      <div class= " card-header bg-warning text-dark"><h3><i> Select Your Ride </i></h3></div>
+      <br> <div class=" container my-3 p-3">
+      <select (change)="displaySelectedDropDown($event)" class="form-control">
+        <option value="sadfsdf" disabled selected>Select Your Ride</option>
+        <option value="KTM">KTM</option>
+        <option value="Bullet">Bullet</option>
+        <option value="BMW">BMW</option>
+        <option value="Ducati">Ducati</option>
+      </select>
+      <br>
+      <div *ngIf="mybikeslist == 'KTM'">
+        <div class="row text-dark">
+          <div class="col-lg-6">
+            <h4> Customer Name</h4>
+            <input type="text" class="form-control" placeholder="Enter Your Name">
+          </div>
+          <div class="col-lg-6">
+            <h4><i>Adhar Number</i></h4>
+            <input type="number" class="form-control" placeholder="Enter Your Adhar Number">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="mybikeslist =='Bullet'">
+        <div class="row text-dark">
+          <div class="col-lg-6">
+            <h4> Customer Name</h4>
+            <input type="text" class="form-control" placeholder="Enter Your Name">
+          </div>
+          <div class="col-lg-6">
+            <h4><i>Pan Number</i></h4>
+            <input type="number" class="form-control" placeholder="Enter Your Pan Number">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="mybikeslist =='BMW'">
+        <div class="row text-dark">
+          <div class="col-lg-6">
+            <h4><i>Customer Name</i></h4>
+            <input type="text" class="form-control" placeholder="Enter Your Name">
+          </div>
+          <div class="col-lg-6">
+            <h4><i>SSN</i></h4>
+            <input type="text" class="form-control" placeholder="Enter Your SSN">
+          </div>
+          <div class="col-lg-6">
+            <h4><i>Passport Number</i></h4>
+            <input type="text" class="form-control" placeholder="Enter Your Passport Number">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="mybikeslist =='Ducati'">
+        <div class="row text-dark">
+          <div class="col-lg-6">
+            <h4><i>Customer Name</i></h4>
+            <input type="text" class="form-control" placeholder="Enter Your Name">
+          </div>
+          <div class="col-lg-4">
+            <h4><i>License Number</i></h4>
+            <input type="text" class="fcontrolorm-" placeholder="Enter Your License Number ">
+          </div>
+          <div class="col-lg-6">
+            <h4><i>Password</i></h4>
+            <input type="password" class="form-control" placeholder="Enter Your  Password ">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
