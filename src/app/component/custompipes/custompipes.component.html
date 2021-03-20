@@ -1,0 +1,82 @@
+<br>
+<div class ="card-header bg-light text-dark">
+    <b>Custom Pipes</b>
+</div>
+<br>
+<br>
+    <div class ="card-header bg-light text-dark">
+        <b>Age Pipe</b>
+        </div>
+    <div class ="card-body text-Light">
+        <table class="table table table-warning table-hover">
+            
+                <thead>
+                  <tr class="table-light">
+                    <th>#</th>
+                    <th>Customer Name</th>
+                    <th>City Name</th>
+                    <th>Deposit Fee</th>
+                    <th>DOB</th>
+                    <th>Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let R of customer">
+                    <td>{{R.Id}}</td>
+                    <td>{{R.Name | uppercase}}</td>
+                    <td>{{R.City | lowercase}}</td>
+                    <td>{{R.Fee| currency}}</td>
+                    <td>{{R.Dob | date: 'dd/MM/yyyy'}}</td>
+                    <td>{{R.Dob|dob}}</td>
+                  </tr>
+                </tbody>
+              </table>
+           
+        </div>
+
+        <div class ="card-header bg-light text-dark">
+            <b>Custom Pipe</b>
+            </div>
+        <div class ="card-body text-Light">
+
+
+         <table class="table table table-warning table-hover">
+                
+                    <thead>
+                      <tr class="table-light">
+                        <th>Name</th>
+                        <th>AccountNuner</th>
+                        <th> Balance</th>
+                        <th>Withdrawen</th>
+                        <th>Card Number</th>
+                        <th>Available Balance</th>
+                        <th> INR</th>
+                      <th>Dollar</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let R of Accounts">
+                        <td>{{R.Name}}</td>
+                        <td>{{R.AccNo}}</td>
+                        <td>{{R.Balance}}</td>
+                        <td>{{R.WithDrawen}}</td>
+                        <td>{{R.CardNumber|cardNumber }}</td>
+                        <td>{{R.WithDrawen| balance}}</td>
+                        <td>{{R.INR}}</td>
+                        <td>{{R.INR| dollor|currency}}</td>
+
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+               
+            </div>
+            <div class="container my-3 p-3">
+              <button type="button" (click)="Book()" class="btn btn-outline-success">  Payload</button>
+          </div>
+
+
+
+          

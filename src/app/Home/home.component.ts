@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Bikes } from '../Model/bikes';
 import Swal from 'sweetalert2'
+import { Router } from '@angular/router';
 @Component({ templateUrl: 'home.component.html' })
 
 
@@ -17,7 +18,7 @@ export class HomeComponent {
     Titles = 'Bikes Rent';
     public selectedride: string;
     public bullet4url: string = "https://news.maxabout.com/wp-content/uploads/2019/11/Royal-Enfield-Classic-350-Single-Seat-7.jpg"
-    constructor() {
+    constructor( private route:Router ) {
 
         setTimeout(() => {
           // this.javaurl =this.angularurl 
@@ -54,6 +55,9 @@ public handleno(p: any) {
     this.pin = c.target.value;
     console.log(  this.pin);
   
+}
+Book(){
+    this.route.navigate(['History'])
 }
 
 public handlecity(b: any) {

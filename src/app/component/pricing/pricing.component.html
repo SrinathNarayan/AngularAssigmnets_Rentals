@@ -1,0 +1,68 @@
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header text-dark">
+            <h3>Your Billed Amount  In  Your Currency</h3>
+        </div>
+        <div class="card-body">
+            <input type="number" class="form-control" [(ngModel)]="inr">
+            <br>
+            <div class="card-footer bg-warning text-dark">
+                <i> Select Your Country For Billed Amount </i>
+            </div>
+            <br>
+            <br>
+            <select (change)="displaySelectedDropDown($event)" class="form-control">
+                <option value="5555" disabled selected>Select Your Country </option>
+                <option value="singapore">Singapore</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="dubai">DUBAI</option>
+                <option value="China">China</option>
+            </select>
+        </div>
+        <div class="card-footer bg-warning text-dark">
+            <i>Billed Amount :</i>
+            <i> {{myOutput}} {{myCurrency}}</i>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header text-dark">
+            <h3>Distanced Travelled</h3>
+        </div>
+        <div class="card-body">
+            <input type="number" class="form-control" [(ngModel)]="distance">
+            <br>
+            <div class="card-footer bg-warning text-dark">
+                <i> Select Unit For Billed Amount </i>
+            </div>
+            <br>
+            <br>
+            <select (change)="displaySelectedUnitDropDown($event)" class="form-control">
+                <option value="5555" disabled selected>Select Your Unit </option>
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilo-Meter</option>
+                <option value="cetimeter">Ceti-Meter</option>
+                
+            </select>
+        </div>
+        <div class="card-footer bg-warning text-dark">
+            <i>Total Distance :</i>
+            <i> {{myoutput}} {{MyUnit}}</i>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container my-3 p-3">
+        <button type="button" (click)="Book()" class="btn btn-outline-success"> BuildIn Pipes</button>
+    </div>
+</div>

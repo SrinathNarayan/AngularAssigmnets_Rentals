@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Rides } from 'src/app/Model/rides';
 
 @Component({
@@ -15,16 +16,19 @@ export class BikesComponent implements OnInit {
  
 
 
-  constructor() { 
+  constructor(private route:Router) { 
     this.mybike = [
-      { BikeID: 211 , BikeName: "Bullet", CustomerName: "Mota", CityName:"Pali" },
-      { BikeID: 236,BikeName: "KTM", CustomerName: "Lokesh", CityName: "Chennai" },
+      { BikeID: 211 ,BikeName: "Bullet", CustomerName: "Mota", CityName:"Pali" },
+      { BikeID: 369,BikeName: "KTM", CustomerName: "Lokesh", CityName: "Chennai" },
       { BikeID: 235,BikeName: "BMW", CustomerName: "Piyush", CityName: "Pune" },
-      { BikeID: 136,BikeName: "DUCATI", CustomerName: "Kishore", CityName: "BomBay" },
-      { BikeID: 259,BikeName: "YAMAHA", CustomerName: "Jk", CityName: "Jaipur" },
+      { BikeID: 478,BikeName: "DUCATI", CustomerName: "Kishore", CityName: "BomBay" },
+      { BikeID: 528,BikeName: "YAMAHA", CustomerName: "Jk", CityName: "Jaipur" },
     ]
 
   }
+  Book(){
+    this.route.navigate(['pricing']);
+}
 
   ngOnInit(): void {
   }

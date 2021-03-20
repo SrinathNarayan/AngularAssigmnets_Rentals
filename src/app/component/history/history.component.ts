@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Rides } from 'src/app/Model/rides';
 
 @Component({
@@ -10,13 +11,13 @@ import { Rides } from 'src/app/Model/rides';
 export class HistoryComponent implements OnInit {
   mybikes : Rides[]=[];
   
-  constructor() { 
+  constructor(private route:Router) { 
 
     this.mybikes = [
       { BikeID: 211 , BikeName: "Bullet", CustomerName: "Mota", CityName:"Pali" },
-      { BikeID: 236,BikeName: "KTM", CustomerName: "Lokesh", CityName: "Chennai" },
-      { BikeID: 236,BikeName: "BMW", CustomerName: "Piyush", CityName: "Pune" },
-      { BikeID: 236,BikeName: "DUCATI", CustomerName: "Kishore", CityName: "BomBay" },
+      { BikeID: 235,BikeName: "KTM", CustomerName: "Lokesh", CityName: "Chennai" },
+      { BikeID: 789,BikeName: "BMW", CustomerName: "Piyush", CityName: "Pune" },
+      { BikeID: 561,BikeName: "DUCATI", CustomerName: "Kishore", CityName: "BomBay" },
       { BikeID: 236,BikeName: "YAMAHA", CustomerName: "Jk", CityName: "Jaipur" },
 
 
@@ -36,6 +37,9 @@ export class HistoryComponent implements OnInit {
       }
     });
   }
+  Book(){
+    this.route.navigate(['requirement']);
+}
 
   ngOnInit(): void {
   }

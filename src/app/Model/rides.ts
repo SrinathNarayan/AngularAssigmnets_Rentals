@@ -2,6 +2,7 @@ import RideBaseModel from "./RideBaseModel";
 
 
 export class Rides extends RideBaseModel {
+    static BikesID: any;
 
     constructor( BikeID:number,BikeName:string ,CustomerName:string,CityName: string){
         super();

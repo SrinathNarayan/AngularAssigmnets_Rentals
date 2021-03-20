@@ -68,7 +68,7 @@
         </div>
     </div>
 -->
-<!--Event Binding-->
+        <!--Event Binding-->
         <div class="card  bg-light text-dark p-3 my-3">
 
             <div class="container">
@@ -79,7 +79,7 @@
                         <input type="text" class="form-control" placeholder="Full Name" [value]=" myname"
                             (input)="handlename($event)">
                         <br>
-                        <i>jJst Type..</i>
+                        <i>Just Type..</i>
                     </div>
                     <div class="col-lg-4">
                         <i> Mobile Number </i>
@@ -141,19 +141,19 @@
                 <div class="row">
 
                     <div class="col-lg-4">
-                    <b>Name</b>
+                        <b>Name</b>
                         <br>
-                      <b> <i>{{(this.myname)}}</i></b>  
+                        <b> <i>{{(this.myname)}}</i></b>
                     </div>
                     <div class="col-lg-4">
                         <b>Phone Number</b>
                         <br>
-                        <b> <i>{{(this.myno)}}</i></b>  
+                        <b> <i>{{(this.myno)}}</i></b>
                     </div>
                     <div class="col-lg-4">
                         <b>PinCode</b>
                         <br>
-                        <b> <i>{{(this.pin)}}</i></b>  
+                        <b> <i>{{(this.pin)}}</i></b>
                     </div>
                 </div>
                 <br><br>
@@ -161,29 +161,32 @@
                     <div class="col-lg-4">
                         <b>City</b>
                         <br>
-                        <b> <i>{{(this.mycity)}}</i></b>  
+                        <b> <i>{{(this.mycity)}}</i></b>
                     </div>
                     <div class="col-lg-4">
                         <b>Country</b>
                         <br>
-                        <b> <i>{{(this.mycountry)}}</i></b>  
-  
+                        <b> <i>{{(this.mycountry)}}</i></b>
+
                     </div>
                     <br>
                     <div class="col-lg-4">
                         <b>Your Ride.</b>
                         <br>
-                        <b><i>{{(selectedride)}}</i></b>  
+                        <b><i>{{(selectedride)}}</i></b>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        
-      
-          <!--Button-->
-        <div>
-            <button type="button"  (click) ="opensweet()"class="btn btn-outline-warning btn-lg btn-block">Submit</button>
-        </div>
 
+
+        <!--Button-->
+        <div>
+            <button type="button" (click)="opensweet()" class="btn btn-outline-warning btn-lg btn-block">Submit</button>
+        </div>
+        <br>
+        <div class="container my-3 p-3">
+            <button type="button" (click)="Book()" class="btn btn-outline-success">Booking History</button>
+        </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-requirments',
@@ -9,7 +10,7 @@ export class RequirmentsComponent implements OnInit {
   mybikeslist: any;
   public bullet5url: string = "https://news.maxabout.com/wp-content/uploads/2020/01/RE-Classic-500-Tribute-Black-10.jpg"
 
-  constructor() { }
+  constructor(private route:Router ) { }
 
   ngOnInit(): void {
   }
@@ -17,4 +18,7 @@ export class RequirmentsComponent implements OnInit {
   {
     this.mybikeslist = e.target.value;
   }
+  Book(){
+    this.route.navigate(['Bike']);
+}
 }
