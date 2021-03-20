@@ -1,0 +1,402 @@
+{
+    "payment": [
+      {
+        "id": 321,
+        "Customerid": 693,
+        "payment_amount": 500000,
+        "currency": "INR",
+        "from_Account": "321456987",
+        "To_Account": "987456321",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4000"
+      },
+      {
+        "id": 639,
+        "Customerid": 456,
+        "payment_amount": 80000,
+        "currency": "USD",
+        "from_Account": "789654369",
+        "To_Account": "159874236",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "6000"
+      },
+      {
+        "id": 654,
+        "Customerid": 852,
+        "payment_amount": 560000,
+        "currency": "Dollar",
+        "from_Account": "6987456321",
+        "To_Account": "7536984120",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4114"
+      },
+      {
+        "id": 142,
+        "Customerid": 357,
+        "payment_amount": 850000,
+        "currency": "Yen",
+        "from_Account": "15987456321",
+        "To_Account": "3698523697",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "9000"
+      },
+      {
+        "id": 698,
+        "Customerid": 235,
+        "payment_amount": 780000,
+        "currency": "USD",
+        "from_Account": "456987123",
+        "To_Account": "369852147",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "7500"
+      },
+      {
+        "id": 246,
+        "Customerid": 987,
+        "payment_amount": 730000,
+        "currency": "Yen",
+        "from_Account": "753698412",
+        "To_Account": "369741369",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "89000"
+      },
+      {
+        "id": 345,
+        "Customerid": 756,
+        "payment_amount": 660000,
+        "currency": "INR",
+        "from_Account": "789654123",
+        "To_Account": "369852147",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "2300"
+      },
+      {
+        "id": 951,
+        "Customerid": 753,
+        "payment_amount": 720000,
+        "currency": "Dollers",
+        "from_Account": "36547892",
+        "To_Account": "598712364",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "3600"
+      },
+      {
+        "id":695,
+        "Customerid": 789,
+        "payment_amount": 520000,
+        "currency": "INR",
+        "from_Account": "2365987412",
+        "To_Account": "852369741",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "220000"
+      },
+      {
+        "id": 698,
+        "Customerid": 506,
+        "payment_amount": 690000,
+        "currency": "YEN",
+        "from_Account": "569874123",
+        "To_Account": "357894126",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "3690"
+      },
+      {
+        "id": 808,
+        "Customerid": 545,
+        "payment_amount": 580000,
+        "currency": "USD",
+        "from_Account": "569874321",
+        "To_Account": "556699887744",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "5986"
+      },
+      {
+        "id": 665,
+        "Customerid": 223,
+        "payment_amount": 756300,
+        "currency": "EURO",
+        "from_Account": "445566998877",
+        "To_Account": "1133665897",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "7892"
+      },
+      {
+        "id": 669,
+        "Customerid": 553,
+        "payment_amount": 596000,
+        "currency": "YEN",
+        "from_Account": "669933221147",
+        "To_Account": "55669988741",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "7890"
+      },
+      {
+        "id":336,
+        "Customerid": 589,
+        "payment_amount": 398000,
+        "currency": "Dollers",
+        "from_Account": "55887799664",
+        "To_Account": "36985214756",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "5690"
+      },
+      {
+        "id": 236,
+        "Customerid": 956,
+        "payment_amount": 780000,
+        "currency": "EURO",
+        "from_Account": "56987412323",
+        "To_Account": "556699887744",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "3900"
+      },
+      {
+        "id": 336,
+        "Customerid": 225,
+        "payment_amount": 5698770,
+        "currency": "EURO",
+        "from_Account": "956874321",
+        "To_Account": "456987123",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4500"
+      },
+      {
+        "id": 336,
+        "Customerid": 558,
+        "payment_amount": 490000,
+        "currency": "DOLLARS",
+        "from_Account": "569832147",
+        "To_Account": "236541789",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "9500"
+      },
+      {
+        "id": 783,
+        "Customerid": 715,
+        "payment_amount": 930000,
+        "currency": "USD",
+        "from_Account": "369741258",
+        "To_Account": "456987123",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "7500"
+      },
+      {
+        "id": 321,
+        "Customerid": 897,
+        "payment_amount": 350000,
+        "currency": "INR",
+        "from_Account": "6987456321",
+        "To_Account": "236541789",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "9600"
+      }
+    ],
+    "fraudulent_payment": [
+      {
+        "banned_currencies": "Yen",
+        "Banned_Country":"China",
+        "amount_limit": "7200000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/03/1598"
+      },
+      {
+        "banned_currencies": "Euro",
+        "Banned_Country":"China",
+        "amount_limit": "6900000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/09/1798"
+      },
+      {
+        "banned_currencies": "USD",
+        "Banned_Country":"India",
+        "amount_limit": "920000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/10/1896"
+      },
+      {
+        "banned_currencies": "POUND",
+        "Banned_Country":"Japan",
+        "amount_limit": "900000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/11/1698"
+      },
+      {
+        "banned_currencies": "YEN",
+        "Banned_Country":"China",
+        "amount_limit": "890000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "24/11/1478"
+      },
+      {
+        "banned_currencies": "AFGANI",
+        "Banned_Country":"Pakisthan",
+        "amount_limit": "660000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "25/01/1296"
+      },
+      {
+        "banned_currencies": "REAL",
+        "Banned_Country":"Canada",
+        "amount_limit": "800000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "25/12/1897"
+      },
+      {
+        "banned_currencies": "LEV",
+        "Banned_Country":"Brazil",
+        "amount_limit": "770000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "25/09/1369"
+      },
+      {
+        "banned_currencies": "REAL",
+        "Banned_Country":"Canada",
+        "amount_limit": "800000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "25/12/1897"
+      },
+      {
+        "banned_currencies": "Cedi",
+        "Banned_Country":"France",
+        "amount_limit": "950000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "9/06/1765"
+      },
+      {
+        "banned_currencies": "Franc",
+        "Banned_Country":"Ghana",
+        "amount_limit": "140000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "13/06/1465"
+      },
+      {
+        "banned_currencies": "rupiah",
+        "Banned_Country":"Bhutan",
+        "amount_limit": "3690000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "13/09/1968"
+      },
+      {
+        "banned_currencies": "rial",
+        "Banned_Country":"Indo",
+        "amount_limit": "3690000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "13/09/1708"
+      },
+      {
+        "banned_currencies": "dinar",
+        "Banned_Country":"Iran",
+        "amount_limit": "980000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/12/1205"
+      },
+      {
+        "banned_currencies": "baht",
+        "Banned_Country":"Nepal",
+        "amount_limit": "3600000",
+        "Blocked_banned_accounts": "565656565655656",
+        "date_Time": "12/01/2000"
+      }
+
+    ],
+    "cutomer": [
+      {
+        "customerId": "1",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Platinium",
+        "Currencies": "Dollars",
+        "Countries": "USA",
+        "Cities": "Unknown"
+      },
+      {
+        "customerId": "2",
+        "CustomerTypes": "Normal Class",
+        "CreditCardTypes": "Gold",
+        "Currencies": "Rupees",
+        "Countries": "India",
+        "Cities": "chennai"
+      },
+      {
+        "customerId": "3",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Diamond",
+        "Currencies": "Dollars",
+        "Countries": "USA",
+        "Cities": "Unknown"
+      },
+      {
+        "customerId": "4",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Sample",
+        "Currencies": "Dollars",
+        "Countries": "USA",
+        "Cities": "Unknown"
+      }
+    ],
+    "PaymentDetails": [
+      {
+        "id": 1,
+        "Customerid": 2,
+        "payment_amount": 500000,
+        "currency": "Rupees",
+        "from_Account": "456456456456456",
+        "To_Account": "456456456456456456",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4114",
+        "banned_currencies": "sadfasdff",
+        "amount_limit": "112124541",
+        "Blocked_banned_accounts": "54986432496743496",
+        "date_Time": "5461674965126",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Platinium",
+        "Countries": "USA",
+        "Cities": "Unknown",
+        "Application_Status": "C"
+      },
+      {
+        "id": 1,
+        "Customerid": 4,
+        "payment_amount": 500000,
+        "currency": "Rupees",
+        "from_Account": "456456456456456",
+        "To_Account": "456456456456456456",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4114",
+        "banned_currencies": "sadfasdff",
+        "amount_limit": "112124541",
+        "Blocked_banned_accounts": "54986432496743496",
+        "date_Time": "5461674965126",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Platinium",
+        "Countries": "India",
+        "Cities": "Chennai",
+        "Application_Status": "C"
+      },
+      {
+        "id": 1,
+        "Customerid": 5,
+        "payment_amount": 500000,
+        "currency": "Dollar",
+        "from_Account": "456456456456456",
+        "To_Account": "456456456456456456",
+        "beneficiary_account": "565656565656565656",
+        "bank_charges": "4114",
+        "banned_currencies": "sadfasdff",
+        "amount_limit": "112124541",
+        "Blocked_banned_accounts": "54986432496743496",
+        "date_Time": "5461674965126",
+        "CustomerTypes": "Business Class",
+        "CreditCardTypes": "Platinium",
+        "Countries": "USA",
+        "Cities": "Unknown",
+        "Application_Status": "NC"
+      }
+    ]
+    
+  }   
+   
+   
+   
+   
+
+    
