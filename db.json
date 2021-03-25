@@ -81,7 +81,7 @@
         "bank_charges": "3600"
       },
       {
-        "id":695,
+        "id": 695,
         "Customerid": 789,
         "payment_amount": 520000,
         "currency": "INR",
@@ -131,7 +131,7 @@
         "bank_charges": "7890"
       },
       {
-        "id":336,
+        "id": 336,
         "Customerid": 589,
         "payment_amount": 398000,
         "currency": "Dollers",
@@ -193,111 +193,125 @@
     ],
     "fraudulent_payment": [
       {
+        "BanID": "101",
         "banned_currencies": "Yen",
-        "Banned_Country":"China",
+        "Banned_Country": "China",
         "amount_limit": "7200000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/03/1598"
       },
       {
+        "BanID": "365",
         "banned_currencies": "Euro",
-        "Banned_Country":"China",
+        "Banned_Country": "China",
         "amount_limit": "6900000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/09/1798"
       },
       {
+        "BanID": "123",
         "banned_currencies": "USD",
-        "Banned_Country":"India",
+        "Banned_Country": "India",
         "amount_limit": "920000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/10/1896"
       },
       {
+        "BanID": "369",
         "banned_currencies": "POUND",
-        "Banned_Country":"Japan",
+        "Banned_Country": "Japan",
         "amount_limit": "900000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/11/1698"
       },
       {
+        "BanID": "789",
         "banned_currencies": "YEN",
-        "Banned_Country":"China",
+        "Banned_Country": "China",
         "amount_limit": "890000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "24/11/1478"
       },
       {
+        "BanID": "258",
         "banned_currencies": "AFGANI",
-        "Banned_Country":"Pakisthan",
+        "Banned_Country": "Pakisthan",
         "amount_limit": "660000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "25/01/1296"
       },
       {
+        "BanID": "147",
         "banned_currencies": "REAL",
-        "Banned_Country":"Canada",
+        "Banned_Country": "Canada",
         "amount_limit": "800000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "25/12/1897"
       },
       {
+        "BanID": "654",
         "banned_currencies": "LEV",
-        "Banned_Country":"Brazil",
+        "Banned_Country": "Brazil",
         "amount_limit": "770000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "25/09/1369"
       },
       {
+        "BanID": "357",
         "banned_currencies": "REAL",
-        "Banned_Country":"Canada",
+        "Banned_Country": "Canada",
         "amount_limit": "800000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "25/12/1897"
       },
       {
+        "BanID": "369",
         "banned_currencies": "Cedi",
-        "Banned_Country":"France",
+        "Banned_Country": "France",
         "amount_limit": "950000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "9/06/1765"
       },
       {
+        "BanID": "753",
         "banned_currencies": "Franc",
-        "Banned_Country":"Ghana",
+        "Banned_Country": "Ghana",
         "amount_limit": "140000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "13/06/1465"
       },
       {
+        "BanID": "357",
         "banned_currencies": "rupiah",
-        "Banned_Country":"Bhutan",
+        "Banned_Country": "Bhutan",
         "amount_limit": "3690000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "13/09/1968"
       },
       {
+        "BanID": "369",
         "banned_currencies": "rial",
-        "Banned_Country":"Indo",
+        "Banned_Country": "Indo",
         "amount_limit": "3690000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "13/09/1708"
       },
       {
+        "BanID": "147",
         "banned_currencies": "dinar",
-        "Banned_Country":"Iran",
+        "Banned_Country": "Iran",
         "amount_limit": "980000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/12/1205"
       },
       {
+        "BanID": "357",
         "banned_currencies": "baht",
-        "Banned_Country":"Nepal",
+        "Banned_Country": "Nepal",
         "amount_limit": "3600000",
         "Blocked_banned_accounts": "565656565655656",
         "date_Time": "12/01/2000"
       }
-
     ],
     "cutomer": [
       {
@@ -391,12 +405,48 @@
         "Cities": "Unknown",
         "Application_Status": "NC"
       }
+    ],
+    "money": [
+      {
+        "CurrencyCode":971,
+        "CurrencyName": "Afghani",
+        "CountryName" :"Afghanistan",
+        "code" :"AFN"
+      },
+      {
+        "CurrencyCode": 150,
+        "CurrencyName": "Taka",
+        "CountryName" :"Bangladesh",
+        "code" :"BDT"
+      },
+      {
+        "CurrencyCode": 368,
+        "CurrencyName": "Dinar",
+        "CountryName" :"Iraq",
+        "code" :"IQT"
+      },{
+        "CurrencyCode": 392,
+        "CurrencyName": "Yen",
+        "CountryName" :"Japan",
+        "code" :"JPY"
+      },
+      {
+        "CurrencyCode": 352,
+        "CurrencyName": "Krona",
+        "CountryName" :"Iceland",
+        "code" :"ISK"
+      },
+      {
+        "CurrencyCode": 356,
+        "CurrencyName": "Rupee",
+        "CountryName" :"India",
+        "code" :"INR"
+      },
+      {
+        "CurrencyCode": 986,
+        "CurrencyName": "Real",
+        "CountryName" :"Brazil",
+        "code" :"BRL"
+      }
     ]
-    
-  }   
-   
-   
-   
-   
-
-    
+  }

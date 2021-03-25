@@ -1,0 +1,7 @@
+:host {
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration-color: aliceblue;
+    border: 4px solid goldenrod ;
+    background-color: black;
+  }

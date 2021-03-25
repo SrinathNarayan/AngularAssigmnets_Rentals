@@ -17,11 +17,18 @@
   </thead>
   <tbody>
     <tr *ngFor="let data of fakes">
-        <td *ngFor="let col of index">{{data[col]}}</td>
+        <td>{{data.BanID}}</td>
+        <td>{{data.banned_currencies}}</td>
+        <td>{{data.Banned_Country}}</td>
+        <td>{{data.amount_limit}}</td>
+        <td>{{data.Blocked_banned_accounts}}</td>
+        <td>{{data.date_Time}}</td>
     </tr>
   
   </tbody>
 </table>
 </diV>
-
+<div class="container my-3 p-3">
+  <button type="button" (click)="Book()" class="btn btn-outline-success"> Serach</button>
+</div>
 </div>

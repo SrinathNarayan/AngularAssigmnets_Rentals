@@ -9,6 +9,8 @@ import { HistoryComponent } from './component/history/history.component';
 import { OwnpipesComponent } from './component/ownpipes/ownpipes.component';
 import { PricingComponent } from './component/pricing/pricing.component';
 import { RequirmentsComponent } from './component/requirments/requirments.component';
+import { SearchComponent } from './component/search/search.component';
+import { TrackComponent } from './component/track/track.component';
 import { UpdatehistoryComponent } from './component/updatehistory/updatehistory.component';
 
 
@@ -30,8 +32,9 @@ const routes: Routes = [
   { path: 'Bike', component: BikesComponent },
   { path: 'Account', component: AccountDetailsComponent },
   { path: 'fraud', component: FraudulentDetailsComponent },
+  { path: 'track', component: TrackComponent },
+  { path: 'search', component: SearchComponent },
   
-
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];

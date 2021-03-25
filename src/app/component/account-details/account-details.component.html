@@ -13,12 +13,20 @@
       </thead>
       <tbody>
         <tr *ngFor="let data of details">
-          <td *ngFor="let col of index">{{data[col]}}</td>
+          <td >{{data.id}}</td>
+          <td >{{data.Customerid}}</td>
+          <td >{{data.payment_amount}}</td>
+          <td >{{data.currency}}</td>
+          <td >{{data.from_Account}}</td>
+          <td >{{data.To_Account}}</td>
+          <td >{{data.beneficiary_account}}</td>
+          <td >{{data.bank_charges}}</td>
         </tr>
       </tbody> 
     </table>
 </div> 
   </div>
-  <div class="container my-3 p-3">
+  
+<div class="container my-3 p-3">
     <button type="button" (click)="Book()" class="btn btn-outline-success"> fraud</button>
 </div>

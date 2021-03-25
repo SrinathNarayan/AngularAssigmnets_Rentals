@@ -18,4 +18,10 @@ export class PayloadService {
   {
     return this.http.get<Payment[]>(this.url).toPromise();
   }
+  getPayment1(id:any):Promise<Payment[]>
+  {
+    return this.http.get<Payment[]>(this.url+"?id="+id).toPromise();
+  }
+
 }
+

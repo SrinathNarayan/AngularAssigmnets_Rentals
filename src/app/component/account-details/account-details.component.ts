@@ -20,7 +20,7 @@ export class AccountDetailsComponent implements OnInit {
   details:Payment[]=[];
 
   ngOnInit(): void {
-    // this.payload.getdetails().subscribe(
+    //    this.payload.getdetails().subscribe(
     //   (Response)=>
     //   {
     //     this.details=Response;
@@ -36,4 +36,4 @@ export class AccountDetailsComponent implements OnInit {
   Book(){
     this.route.navigate(['fraud'])
 }
-}
+}   

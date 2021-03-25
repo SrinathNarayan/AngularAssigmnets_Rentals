@@ -1,0 +1,138 @@
+<div class="container p-3 my-3">
+  <div class="card-header bg-warning text-dark">
+    <i>Track Your History</i>
+  </div>
+  <br>
+
+  <div class="card-body bg-light text-dark">
+    <select (change)="displaySelectedDropDown($event)" class="form-control">
+      <option value="tshjs" disabled selected>Select Your Tracking Option</option>
+      <option value="payment">Customer Details</option>
+      <option value="banned">Banned Curency</option>
+      <option value="customer">Payment History</option>
+
+    </select>
+    <br>
+  </div>
+  <br>
+  <div *ngIf="selction == 'payment'">
+
+    <div>
+      <h4> ID</h4>
+      <input type="text" class="form-control" placeholder="Enter Transection ID" #id>
+      <br>
+      <div class="card-footer my-3 p-3">
+        <button type="button" (click)="displaycustomerHandle(id.value)" class="btn btn-outline-warning">Track</button>
+      </div>
+
+    </div>
+  </div>
+  <div *ngIf="selction =='banned'">
+
+    <div>
+      <h4>Banned Curency</h4>
+      <input type="text" class="form-control" placeholder="Enter  Banned Curency" #BanID>
+      <br>
+      <div class="card-footer my-3 p-3">
+        <button type="button" (click)=" displaybannedHandle(BanID.value)" class="btn btn-outline-warning">Track</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="selction =='customer'">
+    <div>
+
+      <h4>Transection ID</h4>
+      <input type="num" class="form-control" placeholder="Enter Customer  ID" #id>
+      <br>
+      <div class="card-footer my-3 p-3">
+        <button type="button" (click)="displayhistoryHandle(id.value)" class="btn btn-outline-warning">Track</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div>
+
+  <!--pament-->
+  <div *ngIf="selction == 'customer'">
+    <div class="card text-light">
+      <table id="details" class="table table-dark table-hover">
+        <thead>
+          <tr class="table-dark text-dark">
+            <th *ngFor="let col of columns">
+              {{col}}
+            </th>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let data of details">
+            <td>{{data.id}}</td>
+            <td>{{data.Customerid}}</td>
+            <td>{{data.payment_amount}}</td>
+            <td>{{data.currency}}</td>
+            <td>{{data.from_Account}}</td>
+            <td>{{data.To_Account}}</td>
+            <td>{{data.beneficiary_account}}</td>
+            <td>{{data.bank_charges}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--bancurrency-->
+  <div *ngIf="selction == 'banned'">
+    <div class="card text-light">
+      <table id="fraud" class="table table-dark table-hover">
+        <thead>
+          <tr class="table-dark text-dark">
+            <th *ngFor="let col of bancolumns">
+              {{col}}
+            </th>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let mydata of fraud">
+            <td>{{mydata.BanID}}</td>
+            <td>{{mydata.banned_currencies}}</td>
+            <td>{{mydata.Banned_Country}}</td>
+            <td>{{mydata.amount_limit}}</td>
+            <td>{{mydata.Blocked_banned_accounts}}</td>
+            <td>{{mydata.date_Time}}</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+    <!--customers-->
+    <div *ngIf="selction == 'payment'">
+      <div class="card text-light">
+        <table id="customers" class="table table-dark table-hover">
+          <thead>
+            <tr class="table-dark text-dark">
+              <th *ngFor="let col of cuscolumns">
+                {{col}}
+              </th>
+          </thead>
+          <tbody>
+  
+            <tr *ngFor="let cusdata of customers">
+              <td>{{cusdata.customerId}}</td>
+              <td>{{cusdata.CustomerTypes}}</td>
+              <td>{{cusdata.CreditCardTypes}}</td>
+              <td>{{cusdata.Currencies}}</td>
+              <td>{{cusdata.Countries}}</td>
+              <td>{{cusdata.Cities}}</td>
+  
+            </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container my-3 p-3">
+      <button type="button" (click)="Book()" class="btn btn-outline-success"> Serach</button>
+  </div>

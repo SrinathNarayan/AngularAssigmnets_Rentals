@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { fake } from 'src/app/Model/fake';
 import { FraudService } from 'src/app/service/fraud.service';
 
@@ -9,11 +10,11 @@ import { FraudService } from 'src/app/service/fraud.service';
 })
 export class FraudulentDetailsComponent implements OnInit {
 
-  constructor(private frauds: FraudService) { }
+  constructor(private frauds: FraudService,private route:Router) { }
 
-  columns =[ "Banned Currencies", "Banned Country", "Amount Limit", "Blocked And Banned Accounts", "Time Range"];
+  columns =["BanId" ,"Banned Currencies", "Banned Country", "Amount Limit", "Blocked And Banned Accounts", "Time Range"];
 
-  index =[ "banned_currencies", "Banned_Country", "amount_limit", "Blocked_banned_accounts", "date_Time"];
+  index =[ "BanID", "banned_currencies", "Banned_Country", "amount_limit", "Blocked_banned_accounts", "date_Time"];
   fakes:fake[]=[];
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class FraudulentDetailsComponent implements OnInit {
       (Response)=>
       {
         this.fakes=Response;
+        console.log(this.fakes)
       },
       (error)=>{
         console.log("error:"+error);
@@ -28,5 +30,7 @@ export class FraudulentDetailsComponent implements OnInit {
       }
     )
   }
-
+  Book(){
+    this.route.navigate(['track']);
+}
 }
